@@ -1,26 +1,11 @@
-package com.datamodeling.sparksql
-
-import scala.io.StdIn
+package org.example
 
 object scala_practice {
 
-  def main(args: Array[String]): Unit = {
+  def main(args: Array[String]){
 
-    val name = StdIn.readLine("Hi , What is your name:")
+    print("welcome to scala programming")
 
-    println(s"$name , tell me something interesting , say 'bye' to the end talk" )
-
-    var timeToBye = false
-
-    while(!timeToBye)
-      timeToBye = StdIn.readLine(">") match {
-        case "bye" => println("ok, Bye")
-          true
-        case _=> println("interesting.....")
-          false
-      }
   }
-
-
 
 }
